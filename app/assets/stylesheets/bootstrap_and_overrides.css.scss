@@ -7,6 +7,7 @@ body { padding-top: 60px; }
 
 #tbox{
 	text-align:center;
+	margin-left:10%;
 }
 
 .hero-unit{
@@ -51,4 +52,18 @@ body { padding-top: 60px; }
 
 .brand:hover{
 	color:#fff;
+}
+
+#why{
+	background:image-url('chicken.jpg') no-repeat 0px -15px #eee;
+}
+
+#small-chicken{
+	padding-left:160px;
+	
+	.fb-like{
+		position:absolute;
+		top:130px;
+		left:260px;
+	}
 }
