@@ -1,0 +1,54 @@
+@import "bootstrap";
+
+body { padding-top: 60px; }
+
+@import "bootstrap-responsive";
+@import "compass";
+
+#tbox{
+	text-align:center;
+}
+
+.hero-unit{
+	position:relative;
+	
+	p{
+		display:block;
+	}
+}
+
+.hero-unit .fb-like{
+	position:absolute !important;
+	top:20px;
+	right:10px;
+}
+
+#shares{
+	position:relative;
+	padding-top:10px;
+	
+	.twitter-share-button, fb-like{
+		position:absolute;
+		right:0;
+	}
+	
+	.fb-like{
+		right:-42px;
+	}
+	
+	.twitter-share-button{
+		right:53px;
+	}
+}
+
+.brand .icon-refresh{
+	margin-top:6px;
+}
+
+.brand{
+	@include transition-duration((0.5s, 0.5s));
+}
+
+.brand:hover{
+	color:#fff;
+}

@@ -1,0 +1,13 @@
+<% title params[:id].present? ? @answer.filtered_reason : "You Deserve An Answer!" %>
+
+
+<div class="hero-unit">
+			<div class="fb-like" data-href="http://whydidthechicken.com/<%= @answer.permalink %>" data-send="false" data-layout="box_count" data-width="60" data-show-faces="false"></div>
+ 	<h1><%= @answer.filtered_reason %></h1>
+  <p class="pull-right"><%= link_to "@#{@answer.screen_name}", "https://twitter.com/#{@answer.screen_name}/status/#{@answer.tweet_id}" %></p>
+</div>
+
+<div class="hero-unit">
+	<div id="tbox"></div>
+	<script src="/assets/tweet.js" type="text/javascript"></script>
+</div>

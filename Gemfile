@@ -27,6 +27,7 @@ end
 
 gem 'jquery-rails'
 gem 'nifty-generators'
+gem 'bootstrap-sass'
 gem 'compass-rails'
 
 gem 'twitter'
@@ -45,3 +46,7 @@ gem 'twitter'
 
 # To use debugger
 # gem 'debugger'
+
+gem "mocha", :group => :test
+
+gem 'meta-tags', :require => 'meta_tags'

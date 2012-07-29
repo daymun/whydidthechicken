@@ -1,14 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Whydidthechicken</title>
+  <%= display_meta_tags :site => 'Why Did The Chicken Cross The Road?' %>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
+	<script src="http://platform.twitter.com/anywhere.js?id=umBc1ZBF23GPqG2q1IlDQ&v=1" type="text/javascript"></script>
   <%= csrf_meta_tags %>
+	<link rel="shortcut icon" href="/favicon.ico">
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
 </head>
 <body>
-
-<%= yield %>
-
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+	
+<div class="container">
+	
+	<div class="navbar navbar-fixed-top">
+	  <div class="navbar-inner">
+	    <div class="container">
+	      <a class="brand pull-left" href="/">Why Did The Chicken Cross The Road? <i class='icon-refresh icon-white'></i></a>
+				<div class='pull-right' id="shares">
+					<a href="https://twitter.com/share" class="twitter-share-button" data-size="small" data-related="whydidthechickn" data-count="none">Tweet</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+					
+<div class="fb-like" data-href="http://whydidthechicken.com" data-send="false" data-layout="button_count" data-width="90" data-show-faces="false"></div>
+				</div>
+	    </div>
+	  </div>
+	</div>
+	
+	<%= yield %>
+</div>
 </body>
 </html>
