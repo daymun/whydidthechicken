@@ -41,8 +41,7 @@ twttr.anywhere(function (T) {
    }, 
 
    onTweet : function () {
-      tweetBox.setContent('');
-			$('#thanks').modal();
+		$('#thanks').modal();
    }
   });
 
