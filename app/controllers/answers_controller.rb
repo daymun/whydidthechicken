@@ -17,7 +17,12 @@ class AnswersController < ApplicationController
   end
 
   def show
-    @answer = Answer.find(params[:id])
+    begin
+      @answer = Answer.find(params[:id])
+    rescue
+      redirect_to answers_url
+      return
+    end
     
     description = "Why did the chicken cross the road? @#{@answer.screen_name} says it's #{@answer.filtered_reason}. Get more answers now."
     set_meta_tags :open_graph => {
