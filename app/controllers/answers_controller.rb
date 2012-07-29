@@ -8,7 +8,7 @@ class AnswersController < ApplicationController
     set_meta_tags :open_graph => {
   	  :title => 'Why Did The Chicken Cross The Road?',
   	  :url   => 'http://whydidthechicken.com',
-  	  :image => 'http://whydidthechicken.com/images/why.png',
+  	  :image => 'http://whydidthechicken.com/why.png',
   	  :admins => '618030500',
   	  :description => description
     }
@@ -23,7 +23,7 @@ class AnswersController < ApplicationController
     set_meta_tags :open_graph => {
   	  :title => 'Why Did The Chicken Cross The Road?',
   	  :url   => "http://whydidthechicken.com/#{@answer.permalink}",
-  	  :image => 'http://whydidthechicken.com/images/why.png',
+  	  :image => 'http://whydidthechicken.com/why.png',
   	  :admins => '618030500',
   	  :description => description
     }
