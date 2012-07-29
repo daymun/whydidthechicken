@@ -41,7 +41,8 @@ twttr.anywhere(function (T) {
    }, 
 
    onTweet : function () {
-      // tweetBox.setContent('Restore default text'); 
+      tweetBox.setContent('');
+			$('#thanks').modal();
    }
   });
 
