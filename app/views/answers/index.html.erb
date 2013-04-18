@@ -8,8 +8,12 @@
 </div>
 
 <div class="hero-unit" id="why">
-	<div id="tbox"></div>
-	<script src="/assets/tweet.js" type="text/javascript"></script>
+	<%= form_tag '' do %>
+	  <%= text_field_tag :tweet_field, '', placeholder: 'Adorable baby chicken demands you decide: why did she cross the road?' %>
+	  <div class="btn-group">
+	    <%= submit_tag 'Tweet', class: 'btn btn-large' %>
+	  </div>
+	<% end %>
 </div>
 
 <div class="modal hide" id="thanks">
